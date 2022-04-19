@@ -1,0 +1,46 @@
+.weatherContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 70vh;
+    border: 1px solid;
+    border-color: inherit;
+    padding: 20px;
+}
+
+.homeTopContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homeTopLeftContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.homeBottomContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.homeWeatherBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100px;
+    border: 1px solid;
+    border-color: inherit;
+}
+
+.searchContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

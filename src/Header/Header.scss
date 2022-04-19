@@ -1,0 +1,38 @@
+.headerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 63px;
+}
+
+.toggleScreenContainer {
+    width: 268px;
+    display: flex;
+    flex-direction: row;
+}
+
+.screenOption {
+    width: 134px !important;
+    height: 63px !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.activeScreenOption {
+    border-bottom: 3px solid #14348E !important;
+}
+.screenOption:hover {
+    background: #F3F4F6;
+}
+.screenOptionText {
+    font-size: 14px !important;
+    line-height: 18px !important;
+}
+.activeScreenOptionText {
+    color: #14348E !important;
+}
+.inactiveScreenOptionText {
+    color: #9FA4BA !important;
+}
