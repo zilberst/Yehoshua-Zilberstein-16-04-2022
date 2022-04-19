@@ -5,25 +5,19 @@ import {
     setCurrentLocationWeather,
     setWeatherDetails
 } from '../redux/actions/weatherActions';
-import {
-    DEFAULT_LOCATION_KEY,
-    daysOfTheWeekName
-} from '../config/constants';
+import { daysOfTheWeekName } from '../config/constants';
 import { getTemperatureFormat } from '../utils/helpers';
 import {
-    Input,
     Autocomplete,
     TextField,
     Button
 } from '@mui/material';
-import SearchIcon from '@mui/icons-material/Search';
 import {
     getFavorites,
     addToFavorites,
     removeFromFavorites
 } from '../utils/favorites';
 import { autocompleteSearch } from '../utils/apiCalls';
-import { initDefaultLocation } from '../utils/init';
 
 const HomeScreen = (props) => {
     const {
@@ -37,11 +31,6 @@ const HomeScreen = (props) => {
 
     const [favorites, setFavorites] = useState(getFavorites());
     const [autocompleteOptions, setAutocompleteOptions] = useState([]);
-
-    useEffect(() => {
-        initDefaultLocation();
-        setCurrentLocationWeather(DEFAULT_LOCATION_KEY);
-    }, []);
 
     useEffect(() => {
         setCurrentLocationWeather(currentLocationKey);

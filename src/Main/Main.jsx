@@ -1,16 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import s from './Main.scss';
 import Header from '../Header/Header';
 import HomeScreen from '../HomeScreen/HomeScreen';
 import FavoritesScreen from '../FavoritesScreen/FavoritesScreen';
 import { screenModes } from '../config/constants';
+import { initDefaultLocation } from '../utils/init';
 
 const Main = (props) => {
     const {
         screenMode
     } = props;
 
+    useEffect(() => {
+        initDefaultLocation();
+    }, []);
 
     return (
         <div>     
