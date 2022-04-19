@@ -5,7 +5,7 @@ import axios from "axios";
 import store from "../redux/store";
 import { temperatureUnits } from "../config/constants";
 
-const BASE_URL = 'http://dataservice.accuweather.com/';
+const BASE_URL = 'https://dataservice.accuweather.com/';
 const AUTOCOMPLETE_URL = BASE_URL + 'locations/v1/cities/autocomplete';
 const CURRENT_WEATHER_URL = BASE_URL + 'currentconditions/v1/';
 const FIVE_DAYS_FORECAST_URL = BASE_URL + 'forecasts/v1/daily/5day/';
